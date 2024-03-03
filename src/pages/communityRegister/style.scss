@@ -1,0 +1,67 @@
+@import "../../mixins.scss";
+.container {
+  .communityForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    background-color: var(--softBg);
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+        color: crimson;
+        height: 4rem;
+        width: 4rem;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      label {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      input {
+        font-size: 14px;
+        outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+    }
+
+    .checkboxContainer {
+      margin-top: -10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding-left: 4px;
+      input {
+        height: 14px;
+        width: 14px;
+      }
+      label {
+        font-size: 12px;
+      }
+    }
+    button {
+      background-color: crimson;
+      border: none;
+      color: white;
+      height: 40px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  }
+}
